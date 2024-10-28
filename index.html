@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Site Desafio Vivo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" /> <!-- importação do CSS-->
+
+    <!-- Importação de fontes, utilizando Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--Fim da importação-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><!-- Importação icones menu-->
+</head>
+
+<body>
+    <header>
+        <div class="conteinerMenu">
+            <div class="logo">
+                <img src="imagens/logoODS.png">
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio </a></li>
+                    <li><a href="#contexto"><i class="fas fa-info-circle"></i> Contexto </a></li>
+                    <li><a href="#ods"><i class="fas fa-leaf"></i> 17 ODS </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="conteinerInicial">
+            <img src="imagens/imgInicio.png" alt="Imagem inicial" class="imgInicio">
+        </div>
+
+        <section id="contexto" class="conteinerContexto">
+            <div class="txtContexto1">
+                <h2 class="tituloContexto">ONU: Origem e Propósito</h2>
+                <p>
+                    A Organização das Nações Unidas (ONU) foi fundada em 1945, logo após a Segunda Guerra Mundial, em um
+                    esforço coletivo para evitar futuros conflitos globais. As Nações Unidas foram concebidas como uma
+                    organização internacional onde representantes de diversos países poderiam dialogar e buscar soluções
+                    pacíficas para questões políticas, sociais e econômicas. Com sede em Nova York, a ONU se tornou uma
+                    força central para a diplomacia e a cooperação entre nações, promovendo a paz e a segurança no cenário
+                    global. <br><br>
+                    Além de promover a paz, a ONU se envolveu em projetos que abrangem desde ajuda humanitária até missões
+                    de paz e apoio ao desenvolvimento sustentável. Nos anos que se seguiram à sua criação, a organização
+                    trabalhou para reduzir desigualdades, ajudar na reconstrução de regiões devastadas pela guerra e
+                    fomentar o progresso social e econômico em países em desenvolvimento.<br><br>
+                    Hoje, com 193 Estados-membros, a ONU organiza cúpulas e fóruns globais, como a Conferência sobre o Clima
+                    e a Assembleia Geral, onde os líderes mundiais discutem temas urgentes e compartilham soluções
+                    colaborativas para problemas globais. Seus Objetivos de Desenvolvimento Sustentável (ODS) representam um
+                    compromisso das nações para enfrentar os maiores desafios do século XXI.
+                </p>
+            </div>
+    
+            <img src="imagens/imagemONU.jpeg" alt="Imagem da ONU" class="imgContexto1">
+    
+            <img src="imagens/imagemObjetivos.jpg" alt="Imagem dos ODS" class="imgContexto2">
+            <div class="txtContexto2">
+                <h2 class="tituloContexto">ODS e Agenda 2030</h2>
+                <p>
+                    Os Objetivos de Desenvolvimento Sustentável (ODS) nasceram de uma necessidade de atualização e ampliação
+                    da agenda de desenvolvimento global, anteriormente focada nos Objetivos de Desenvolvimento do Milênio
+                    (ODM), que se encerraram em 2015. Com o sucesso parcial dos ODM, a ONU percebeu a urgência de expandir
+                    essa agenda, criando metas ainda mais ambiciosas e inclusivas. Em setembro de 2015, durante a Cúpula das
+                    Nações Unidas, foi lançada a Agenda 2030 para o Desenvolvimento Sustentável, estabelecendo 17 objetivos
+                    e 169 metas, que representam um esforço coordenado para enfrentar as questões mais prementes do
+                    planeta.<br><br>
+                    Os ODS buscam erradicar a pobreza, promover a prosperidade, combater as mudanças climáticas e assegurar
+                    que todos possam viver com dignidade e em paz. Ao contrário dos ODM, os ODS são universais e se aplicam
+                    a todos os países, independentemente do seu nível de desenvolvimento econômico. Dessa forma, cada país é
+                    responsável por adaptar e implementar os objetivos de acordo com sua própria realidade, criando
+                    estratégias nacionais que dialoguem com as metas globais.<br><br>
+                    O processo de criação dos ODS envolveu consultas globais, onde governos, sociedade civil e cidadãos
+                    puderam opinar sobre as prioridades de desenvolvimento. Esse diálogo internacional conferiu aos ODS um
+                    caráter inclusivo e globalmente representativo, reafirmando o compromisso da ONU com o desenvolvimento
+                    sustentável e a proteção do planeta para as gerações futuras. Os ODS se tornaram, assim, um chamado à
+                    ação para todos: governos, empresas e sociedade civil.
+                </p>
+            </div>
+        </section>
+    
+        <section id="ods" class="sectionODS">
+            <div class="tituloODS">
+                17 Objetivos de Desenvolvimento Sustentável
+            </div>
+    
+            <div class="subtituloODS">
+                (Clique nas imagens para saber mais)
+            </div>
+    
+            <div class="conteinerArticles">  
+    
+                <article>
+                    <img src="imagens/ods/ods1.jpg" class="imagensODS" onclick="abrirTexto('modal1')">
+                    <div id="modal1" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal1')">&times;</span>
+                            <h2>Erradicação da pobreza</h2>
+                            <p>
+                                O ODS 1 busca erradicar a pobreza em todas as suas formas em todo o mundo. A pobreza extrema afeta bilhões de pessoas, limitando seu acesso a necessidades básicas como alimento, água e educação. O objetivo é garantir que todos tenham acesso a recursos econômicos, serviços básicos e proteção social.<br><br>
+                                Para alcançar essa meta, é fundamental promover políticas que criem empregos, aumentem a renda e proporcionem segurança alimentar. Isso inclui o fortalecimento de sistemas de proteção social e a promoção de iniciativas de desenvolvimento sustentável que incluam as populações mais vulneráveis.<br><br>
+                                Além disso, o ODS 1 enfatiza a necessidade de coletar dados desagregados para entender melhor a pobreza em suas diversas dimensões e criar estratégias mais eficazes para combatê-la. O compromisso global é fundamental para garantir que ninguém fique para trás.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods2.jpg" class="imagensODS" onclick="abrirTexto('modal2')">
+                    <div id="modal2" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal2')">&times;</span>
+                            <h2>Fome zero e agricultura sustentável</h2>
+                            <p>
+                                O ODS 2 busca acabar com a fome e garantir o acesso de todas as pessoas a uma alimentação segura, nutritiva e suficiente durante todo o ano. A fome e a má nutrição afetam milhões de pessoas no mundo, especialmente em regiões de baixa renda e áreas rurais. Além de abordar a fome, o objetivo também incentiva práticas agrícolas sustentáveis, capazes de aumentar a produtividade e preservar o meio ambiente, de modo a garantir o abastecimento de alimentos para as gerações futuras.<br><br>
+                                Para tanto, é necessário aumentar o acesso a recursos para agricultores familiares, apoiar técnicas de cultivo sustentáveis e investir em inovações agrícolas. Programas de combate à fome precisam estar alinhados a políticas que aumentem a resiliência das populações vulneráveis diante de crises climáticas e econômicas. Esses esforços devem garantir que pequenos agricultores e comunidades rurais tenham oportunidades justas de produção e comercialização de alimentos.<br><br>
+                                Além disso, o objetivo defende o fim de práticas agrícolas prejudiciais e do desperdício de alimentos, incentivando métodos mais eficientes de produção e distribuição. Ao combater a fome e promover uma agricultura sustentável, a ONU espera garantir que todas as pessoas tenham direito a uma alimentação adequada, fortalecendo, assim, a segurança alimentar global.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods3.jpg" class="imagensODS" onclick="abrirTexto('modal3')">
+                    <div id="modal3" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal3')">&times;</span>
+                            <h2>Saúde e bem-estar</h2>
+                            <p>
+                                A promoção de uma vida saudável e o bem-estar para todos, em todas as idades, é o foco do ODS 3. A saúde é um direito fundamental e influencia diretamente a capacidade das pessoas de prosperarem na vida social e econômica. Este objetivo abrange desde a redução da mortalidade infantil até o combate a doenças transmissíveis e não transmissíveis, buscando assegurar o acesso universal a serviços de saúde de qualidade.<br><br>
+                                Uma saúde de qualidade exige investimento em infraestruturas, equipamentos e profissionais capacitados, além de políticas públicas que incentivem a prevenção de doenças. Iniciativas para combater a epidemia do HIV, a malária, a tuberculose e outras doenças transmissíveis continuam sendo cruciais em regiões menos desenvolvidas, onde a falta de acesso a medicamentos e atendimento adequado persiste como um problema sério. Nos países mais ricos, a ONU também incentiva a atenção à saúde mental e o controle de doenças crônicas.<br><br>
+                                Outro aspecto importante é a saúde materno-infantil e o combate a mortes evitáveis. O objetivo visa reduzir a mortalidade em grupos vulneráveis e promover o acesso a cuidados básicos para toda a população, destacando-se o compromisso com um sistema de saúde inclusivo e acessível. Dessa forma, o ODS 3 contribui para uma sociedade mais saudável e capaz de enfrentar os desafios contemporâneos.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods4.jpg" class="imagensODS" onclick="abrirTexto('modal4')">
+                    <div id="modal4" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal4')">&times;</span>
+                            <h2>Educação de qualidade</h2>
+                            <p>
+                                O ODS 4 promove uma educação inclusiva, equitativa e de qualidade para todos, desde a infância até a vida adulta. A educação é vista como a base para o desenvolvimento individual e comunitário, proporcionando habilidades que capacitam as pessoas a participarem plenamente da sociedade e a encontrarem melhores oportunidades de emprego. Este objetivo busca eliminar as barreiras ao acesso educacional, como desigualdade de gênero, pobreza e localização geográfica.<br><br>
+                                Para garantir uma educação de qualidade, é essencial investir em infraestruturas educacionais, formação de professores e desenvolvimento de currículos que preparem os alunos para os desafios do futuro. Programas voltados para a primeira infância, alfabetização e capacitação profissional são fundamentais para que todos, independentemente de idade ou contexto, tenham as mesmas oportunidades de aprendizado. Os países também são incentivados a priorizar políticas educacionais que respeitem as culturas locais e promovam valores de tolerância e respeito.<br><br> 
+                                A educação é o motor do desenvolvimento sustentável e está intimamente ligada a outros ODS, como a igualdade de gênero, o trabalho decente e a redução das desigualdades. Ao promover uma educação de qualidade para todos, a ONU espera fortalecer a cidadania global e preparar gerações futuras para enfrentar desafios complexos e interdependentes, como as mudanças climáticas e a paz mundial.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods5.jpg" class="imagensODS" onclick="abrirTexto('modal5')">
+                    <div id="modal5" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal5')">&times;</span>
+                            <h2>Igualdade de gênero</h2>
+                            <p>
+                                O ODS 5 visa alcançar a igualdade de gênero e empoderar todas as mulheres e meninas. A desigualdade de gênero continua a ser uma das barreiras mais persistentes para o desenvolvimento humano, afetando desde o acesso ao mercado de trabalho até a participação em processos de tomada de decisão. Este objetivo enfatiza o fim de todas as formas de discriminação e violência contra mulheres e meninas, incluindo o tráfico humano e o casamento infantil.<br><br> 
+                                Empoderar as mulheres significa garantir que elas tenham acesso a oportunidades e direitos iguais, inclusive no campo econômico e político. As mulheres desempenham um papel essencial na economia global, e seu pleno potencial é fundamental para o desenvolvimento sustentável. Políticas públicas, leis de proteção e iniciativas que promovam a inclusão feminina em todas as esferas da sociedade são vitais para atingir este objetivo.<br><br>
+                                A igualdade de gênero é uma questão de justiça social, mas também de eficácia econômica. Estudos mostram que sociedades que respeitam a igualdade de gênero tendem a ser mais prósperas e estáveis. Dessa forma, ao promover o ODS 5, a ONU defende um mundo onde mulheres e homens compartilhem direitos, deveres e oportunidades de maneira justa, contribuindo para sociedades mais justas e produtivas.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods6.jpg" class="imagensODS" onclick="abrirTexto('modal6')">
+                    <div id="modal6" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal6')">&times;</span>
+                            <h2>Água potável e saneamento</h2>
+                            <p>
+                                O objetivo de garantir água potável e saneamento para todos reconhece que o acesso à água limpa é fundamental para a saúde pública e o bem-estar humano. Embora a água cubra cerca de 70% da superfície da Terra, milhões de pessoas ainda enfrentam dificuldades para obter água segura para consumo e para a higiene básica. Este ODS enfatiza o acesso equitativo à água potável e a necessidade de saneamento básico, como formas de combater doenças e melhorar a qualidade de vida.<br><br>
+                                Para alcançar o ODS 6, é necessário investir em infraestruturas de distribuição e tratamento de água, especialmente em áreas rurais e comunidades marginalizadas. Além disso, é preciso promover a gestão sustentável dos recursos hídricos e a proteção dos ecossistemas que garantem o abastecimento de água. Sem essas ações, os recursos de água potável podem tornar-se cada vez mais escassos, ameaçando a segurança hídrica e a saúde global.<br><br>
+                                A água é um recurso essencial para a agricultura, a indústria e o uso doméstico, e sua escassez pode ter consequências devastadoras para a economia e o meio ambiente. Por isso, o ODS 6 não apenas visa melhorar a qualidade de vida das pessoas, mas também proteger o planeta e criar bases para um desenvolvimento sustentável duradouro.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods7.jpg" class="imagensODS" onclick="abrirTexto('modal7')">
+                    <div id="modal7" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal7')">&times;</span>
+                            <h2>Energia acessível e limpa</h2>
+                            <p>
+                                O ODS 7 busca assegurar o acesso a uma energia acessível, confiável, sustentável e moderna para todos. A energia é um elemento central para o desenvolvimento econômico e social, mas o uso intensivo de fontes fósseis tem contribuído para a degradação ambiental e para o agravamento das mudanças climáticas. Este objetivo incentiva a transição para energias renováveis, como solar, eólica e hidroelétrica, que oferecem uma alternativa mais limpa e sustentável.<br><br>
+                                O acesso à energia limpa é fundamental para reduzir as emissões de gases de efeito estufa e para proporcionar uma qualidade de vida melhor, especialmente em comunidades que ainda dependem de fontes poluentes, como carvão e madeira. Programas de eletrificação rural e incentivos para o desenvolvimento de tecnologias renováveis são essenciais para que todos possam usufruir dos benefícios de uma energia sustentável. Investir em inovação e eficiência energética também é crucial para tornar essas tecnologias mais acessíveis.<br><br>
+                                Ao promover a energia limpa e acessível, o ODS 7 contribui para um futuro mais verde e saudável, em harmonia com os demais objetivos de desenvolvimento sustentável. A ONU espera que, com ações conjuntas entre governos, setor privado e sociedade civil, seja possível reduzir a pegada de carbono e assegurar que o acesso à energia não prejudique o meio ambiente ou as gerações futuras.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods8.jpg" class="imagensODS" onclick="abrirTexto('modal8')">
+                    <div id="modal8" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal8')">&times;</span>
+                            <h2>Trabalho decente e crescimento econômico</h2>
+                            <p>
+                                O ODS 8 promove o crescimento econômico sustentável e inclusivo, junto ao acesso a condições de trabalho decentes para todos. O trabalho é uma fonte de dignidade e autonomia, e seu impacto no bem-estar social e econômico é amplo. Este objetivo visa reduzir o desemprego, especialmente entre jovens e mulheres, e erradicar práticas como o trabalho forçado, infantil e as formas de exploração.<br><br> 
+                                A criação de empregos de qualidade passa por políticas que incentivem o empreendedorismo, a inovação e o desenvolvimento de pequenos e médios negócios. É importante que o crescimento econômico seja sustentável, respeitando os direitos trabalhistas e promovendo a proteção social. A economia deve oferecer oportunidades para todos, contribuindo para a redução das desigualdades e o fortalecimento da prosperidade coletiva.<br><br>
+                                A promoção do trabalho decente é fundamental para construir uma sociedade mais justa e solidária. Com o ODS 8, a ONU reafirma a importância de um desenvolvimento que equilibre crescimento econômico com inclusão social e sustentabilidade ambiental, garantindo que o progresso alcance todas as camadas da sociedade.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods9.jpg" class="imagensODS" onclick="abrirTexto('modal9')">
+                    <div id="modal9" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal9')">&times;</span>
+                            <h2>Indústria, inovação e infraestrutura</h2>
+                            <p>
+                                O ODS 9 busca construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação. Este objetivo reconhece que infraestruturas de qualidade – como estradas, pontes, redes de telecomunicações e energia são essenciais para o desenvolvimento econômico e social. A industrialização sustentável, ao lado da inovação tecnológica, também é fundamental para criar empregos de qualidade e promover a eficiência no uso de recursos.<br><br>
+                                Para alcançar o ODS 9, os países precisam investir em setores-chave que promovam uma economia mais sustentável e inovadora. Isso inclui desde o apoio a pequenas e médias empresas até a adoção de práticas industriais que reduzam a pegada ecológica e promovam a eficiência energética. A pesquisa e o desenvolvimento são igualmente cruciais, pois incentivam soluções novas e criativas para problemas antigos, especialmente nas áreas de transporte, energia e produção.<br><br>
+                                O desenvolvimento de infraestrutura e indústria não deve acontecer em detrimento do meio ambiente. Por isso, o ODS 9 reforça a necessidade de uma abordagem que combine progresso econômico com sustentabilidade, garantindo que a inovação seja uma ferramenta para melhorar a qualidade de vida e proteger o planeta. A ONU espera que essas ações possam proporcionar um desenvolvimento equilibrado, acessível a todos.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods10.jpg" class="imagensODS" onclick="abrirTexto('modal10')">
+                    <div id="modal10" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal10')">&times;</span>
+                            <h2>Redução das desigualdades</h2>
+                            <p>
+                                O ODS 10 visa reduzir as desigualdades dentro dos países e entre eles. A desigualdade econômica, social e política continua a ser uma das maiores barreiras para o desenvolvimento sustentável, pois limita o acesso a oportunidades e recursos essenciais para o bem-estar e a mobilidade social. Este objetivo propõe políticas que garantam igualdade de oportunidades e promovam a inclusão de todos, independentemente de raça, gênero, origem ou status socioeconômico.
+                                As desigualdades, que muitas vezes têm raízes históricas e estruturais, necessitam de políticas abrangentes para serem superadas. Isso inclui o aumento do acesso a serviços de saúde, educação e moradia de qualidade, bem como a promoção de políticas fiscais e sociais que beneficiem as populações mais vulneráveis. Além disso, o ODS 10 reconhece a importância de fortalecer a voz e a representação das minorias em processos de decisão, assegurando que todos possam participar ativamente na construção de suas comunidades.
+                                Reduzir as desigualdades não é apenas uma questão de justiça social, mas também de desenvolvimento sustentável. As nações que priorizam a igualdade tendem a ser mais estáveis e a proporcionar melhores condições de vida para seus cidadãos. Com o ODS 10, a ONU defende uma sociedade onde as oportunidades sejam mais equilibradas, promovendo uma inclusão genuína para um futuro mais equitativo.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods11.jpg" class="imagensODS" onclick="abrirTexto('modal11')">
+                    <div id="modal11" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal11')">&times;</span>
+                            <h2>Cidades e comunidades sustentáveis</h2>
+                            <p>
+                                O ODS 11 propõe tornar as cidades e comunidades inclusivas, seguras, resilientes e sustentáveis. A urbanização acelerada, especialmente nos países em desenvolvimento, tem trazido desafios, como o aumento da pobreza urbana, a falta de moradia adequada, o congestionamento e a poluição. Este objetivo visa criar cidades que proporcionem qualidade de vida para todos, equilibrando crescimento urbano com sustentabilidade ambiental.<br><br>
+                                A criação de cidades sustentáveis envolve planejar e construir infraestruturas adequadas, incluindo transporte público acessível, áreas verdes e sistemas de saneamento eficientes. Além disso, é essencial que as cidades promovam o desenvolvimento habitacional inclusivo, garantindo que todos, independentemente de sua condição econômica, tenham acesso a moradias dignas e seguras. Políticas de prevenção de desastres e adaptação climática também são necessárias para enfrentar os impactos das mudanças climáticas nas áreas urbanas.<br><br>
+                                Ao promover cidades mais inclusivas e sustentáveis, o ODS 11 reforça a importância de um desenvolvimento urbano que considere as necessidades das gerações presentes e futuras. Esse objetivo visa transformar as cidades em espaços de bem-estar e prosperidade, incentivando a criação de ambientes urbanos onde a população possa viver de forma segura e harmoniosa com o meio ambiente.<br><br>
+    
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods12.jpg" class="imagensODS" onclick="abrirTexto('modal12')">
+                    <div id="modal12" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal12')">&times;</span>
+                            <h2>Consumo e produção responsáveis</h2>
+                            <p>
+                                O ODS 12 incentiva o consumo e a produção responsáveis, promovendo a sustentabilidade em todas as etapas da cadeia produtiva. O consumo excessivo e a produção descontrolada são grandes causadores de degradação ambiental e desperdício de recursos. Este objetivo visa modificar o atual padrão de consumo e produção, tornando-o mais consciente e sustentável, para reduzir o impacto no meio ambiente e no esgotamento dos recursos naturais.<br><br>
+                                Adotar práticas de consumo e produção responsáveis exige uma mudança cultural que começa com o entendimento do impacto de nossas escolhas diárias. As empresas são incentivadas a adotar processos produtivos mais limpos, enquanto os consumidores são orientados a preferir produtos que minimizem o desperdício e tenham menor impacto ambiental. Além disso, políticas públicas são necessárias para regular o uso de substâncias tóxicas, aumentar a reciclagem e reduzir a produção de resíduos.<br><br>
+                                Ao adotar padrões de consumo e produção sustentáveis, a sociedade pode contribuir para a conservação dos recursos naturais e a proteção do meio ambiente. O ODS 12 propõe uma abordagem equilibrada, onde o crescimento econômico está alinhado à preservação do planeta, promovendo um futuro mais verde e responsável para todos.                                
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods13.jpg" class="imagensODS" onclick="abrirTexto('modal13')">
+                    <div id="modal13" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal13')">&times;</span>
+                            <h2>Ação contra a mudança global do clima</h2>
+                            <p>
+                                ODS 13 defende ações urgentes para combater as mudanças climáticas e seus impactos, uma das maiores ameaças do século XXI. As mudanças no clima afetam diretamente o meio ambiente e a vida das pessoas, especialmente das populações mais vulneráveis. Este objetivo promove esforços globais para reduzir as emissões de gases de efeito estufa, fortalecer a resiliência e integrar medidas climáticas em políticas nacionais e internacionais.<br><br> 
+                                Para enfrentar a crise climática, é fundamental que todos os setores (desde a indústria até a agricultura) adotem práticas mais sustentáveis e conscientes. Isso inclui a transição para energias renováveis, a preservação de florestas e a redução da pegada de carbono. Além disso, a adaptação a eventos climáticos extremos, como secas e inundações, é essencial para minimizar os impactos nas comunidades mais afetadas.<br><br>
+                                O ODS 13 reafirma que a mudança climática é um desafio global que requer ação coordenada e compromissos sólidos. Ao incentivar a adoção de práticas sustentáveis e a conscientização, a ONU busca promover um planeta mais saudável e um futuro seguro para todos, onde o desenvolvimento econômico e a proteção ambiental coexistam em equilíbrio.    
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods14.jpg" class="imagensODS" onclick="abrirTexto('modal14')">
+                    <div id="modal14" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal14')">&times;</span>
+                            <h2>Vida na água</h2>
+                            <p>
+                                O ODS 14 tem como meta conservar e usar de forma sustentável os oceanos, mares e recursos marinhos. Os ecossistemas marinhos são essenciais para o equilíbrio ecológico, a produção de oxigênio e a biodiversidade, além de fornecerem alimentos e empregos para milhões de pessoas. No entanto, eles estão ameaçados pela poluição, sobrepesca e mudanças climáticas, que prejudicam a vida marinha e as comunidades costeiras.<br><br>
+                                A conservação da vida marinha requer a redução da poluição, o controle da pesca predatória e a proteção dos habitats marinhos. Programas de proteção dos recifes de coral, que são fontes importantes de biodiversidade, são essenciais, assim como políticas para diminuir o uso de plásticos e outros resíduos que contaminam os oceanos. É importante também promover a pesquisa e o monitoramento dos ecossistemas aquáticos para proteger as espécies ameaçadas.<br><br>
+                                Ao defender a proteção dos recursos marinhos, o ODS 14 busca garantir que os oceanos continuem a ser fontes de vida e sustento para a humanidade. A ONU trabalha para conscientizar a sociedade sobre a importância da preservação dos oceanos, incentivando práticas que protejam os recursos hídricos e assegurem a sustentabilidade para as futuras gerações.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods15.jpg" class="imagensODS" onclick="abrirTexto('modal15')">
+                    <div id="modal15" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal15')">&times;</span>
+                            <h2>Vida de ecossistemas terrestres</h2>
+                            <p>
+                                O ODS 15 tem como objetivo proteger, restaurar e promover o uso sustentável dos ecossistemas terrestres, combater a desertificação, deter e reverter a degradação da terra e interromper a perda de biodiversidade. As florestas, montanhas, solos e a diversidade biológica desempenham um papel vital na regulação do clima, na produção de alimentos e na purificação da água. No entanto, a exploração excessiva desses recursos está colocando em risco a vida no planeta, ameaçando a sobrevivência de várias espécies, incluindo a humana.<br><br>
+                                Para proteger a vida terrestre, é essencial investir em conservação de habitats naturais, reflorestamento e práticas agrícolas sustentáveis. As políticas de proteção ambiental devem abordar desde a prevenção de incêndios florestais até o combate ao tráfico de animais silvestres. Além disso, a restauração de ecossistemas degradados e o monitoramento da biodiversidade são fundamentais para proteger as espécies e garantir o equilíbrio dos ecossistemas.<br><br>
+                                A biodiversidade é uma das riquezas mais preciosas da Terra, essencial para o bem-estar e a sobrevivência das futuras gerações. Com o ODS 15, a ONU busca preservar os recursos naturais e assegurar que os ecossistemas terrestres possam continuar a fornecer os benefícios que sustentam a vida no planeta, promovendo um desenvolvimento que respeite a natureza e valorize a sustentabilidade.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods16.jpg" class="imagensODS" onclick="abrirTexto('modal16')">
+                    <div id="modal16" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal16')">&times;</span>
+                            <h2>Paz, justiça e instituições eficazes</h2>
+                            <p>
+                                O ODS 16 promove a construção de sociedades pacíficas, justas e inclusivas, com instituições eficazes e responsáveis. O acesso à justiça e a presença de instituições transparentes e bem estruturadas são pilares para o desenvolvimento sustentável, pois contribuem para a estabilidade social e a confiança da população. Este objetivo enfatiza a necessidade de reduzir todas as formas de violência, corrupção e exploração, promovendo uma governança democrática e inclusiva.<br><br>
+                                A promoção da paz e da justiça passa por ações de fortalecimento das leis, proteção dos direitos humanos e combate ao crime e à violência. Instituições públicas eficientes e responsáveis são essenciais para garantir a confiança da sociedade, proteger os direitos dos cidadãos e promover a equidade social. A participação de todos os grupos sociais, especialmente os mais vulneráveis, na construção de políticas públicas é fundamental para alcançar uma sociedade mais justa.<br><br>
+                                O ODS 16 reforça que a paz e a justiça são pré-requisitos para o desenvolvimento sustentável. Ao promover instituições sólidas e inclusivas, a ONU busca criar um ambiente onde as pessoas possam viver com dignidade, segurança e igualdade, incentivando a construção de uma sociedade mais resiliente e cooperativa.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article>
+                    <img src="imagens/ods/ods17.jpg" class="imagensODS" onclick="abrirTexto('modal17')">
+                    <div id="modal17" class="modal">
+                        <div class="textoModal">
+                            <span class="modalFechado" onclick="fecharTexto('modal17')">&times;</span>
+                            <h2>Parcerias e meios de implementação</h2>
+                            <p>
+                                O ODS 17 destaca a importância de parcerias globais para a implementação dos Objetivos de Desenvolvimento Sustentável. A cooperação entre países, organizações internacionais, setor privado e sociedade civil é essencial para enfrentar desafios complexos, como as mudanças climáticas, a pobreza e as desigualdades. Este objetivo incentiva a mobilização de recursos financeiros, o desenvolvimento de tecnologias e a troca de conhecimentos para apoiar o desenvolvimento sustentável em todas as nações.<br><br>
+                                As parcerias eficazes exigem o fortalecimento de sistemas de financiamento e o aumento da capacidade tecnológica e institucional, especialmente nos países em desenvolvimento. Isso inclui o apoio à criação de políticas fiscais mais justas, o acesso a mercados globais e o incentivo a inovações tecnológicas que promovam a sustentabilidade. A ONU enfatiza a necessidade de transparência e compromisso compartilhado para assegurar que os ODS sejam implementados de forma eficaz.<br><br>
+                                O ODS 17 reforça que a cooperação global é o alicerce para o sucesso dos outros objetivos. Com a união de esforços e o estabelecimento de parcerias estratégicas, é possível construir um futuro mais justo e sustentável, onde os desafios globais sejam enfrentados de maneira colaborativa e inclusiva, garantindo que ninguém fique para trás.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    
+    </main>
+
+    
+    <footer class="rodapeInicio">
+        <div class="txtDireitos">
+            Trabalho Acadêmico Sem Fins Lucrativos<br>
+            Dinossauro do Google - 2024 &copy Todos os direitos reservados
+        </div>
+
+        <div class="links">
+            <a href="https://brasil.un.org/pt-br">
+                <img src="imagens/logoONU.png" alt="Logo da ONU" class="logosRodape">
+            </a>
+
+            <a href="https://www.handtalk.me/br/blog/ods-e-acessibilidade-digital/">
+                <img src="imagens/logoHandtalk.png" alt="logo da Hand Talk" class="logosRodape">
+            </a>
+
+            <a href="https://vivo.com.br/para-voce?gad_source=1&gclid=CjwKCAjwyfe4BhAWEiwAkIL8sJGDtt9PStRW5PrS6gMuraH2YQ4_o2uRttaU8E1I2NE8ENYoL2D26RoCZ1cQAvD_BwE&gclsrc=aw.ds">
+                <img src="imagens/logoVivo.png" alt="logo site da Vivo" class="logosRodape">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
